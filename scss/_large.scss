@@ -1,0 +1,186 @@
+#headerWrapper {
+    background: #f5f5f5;
+    padding: 0.75rem 0;
+}
+
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* Header - Large Screens */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: $gutter;
+    align-items: center;
+    position: relative;
+    
+    img {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+    
+    .phone-number {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    #theButton {
+        display: none;
+    }
+}
+
+/* Hide hamburger menu on large screens */
+#theButton {
+    display: none;
+}
+
+/* Show navigation menu horizontally on large screens */
+#theNav {
+    grid-template-rows: 1fr;
+}
+
+#theNav ul, #theNav ul.open {
+    display: flex;
+    justify-content: flex-end;
+    
+    li a {
+        padding: 1rem 2rem;
+        font-weight: 600;
+        border: none;
+        color: black;
+    }
+    
+    li.active a {
+        font-weight: 600;
+        color: black;
+    }
+}
+
+/* Service Cards - Large Screens */
+.cards {
+    gap: 1.5rem; // Reduced gap for wider cards
+    padding: 3rem 1rem; // Reduced side padding
+    max-width: 1600px; // Increased from 1400px for maximum width
+}
+
+/* Reviews - Large Screens */
+.reviews-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.company-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #A1683A;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+#navWrapper {
+    background: $primaryColor;
+    width: 100%;
+    padding: unset;
+    ///min-height: 64px;
+}
+
+div.allcards {
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns on large screens */
+    gap: 2rem; /* Consistent 2rem gap */
+    max-width: 1200px;
+    margin: 0 auto 4rem auto; /* Center horizontally and add generous bottom margin */
+    padding: 0 3rem; /* Add side padding on large screens */
+    
+    section {
+        img {
+            height: 200px; /* Consistent height across breakpoints */
+        }
+    }
+}
+
+/* Maintain 10px left padding on large screens */
+#mainWrapper > p {
+    padding-left: 10px;
+}
+
+main {
+    padding-left: 10px; /* Add left padding to main */
+}
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+    
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Vertically center all three columns */
+        gap: 4rem;
+        text-align: left;
+    }
+    
+    section.contact {
+        flex: 1; /* Take equal space */
+        
+        .contact-item {
+            justify-content: flex-start;
+            margin-bottom: 0.4rem;
+            
+            ion-icon {
+                font-size: 1rem; /* Smaller icons on desktop */
+            }
+            
+            span, a {
+                font-size: 0.9rem; /* Smaller text on desktop */
+            }
+        }
+    }
+    
+    section.social {
+        flex: 1; /* Take equal space */
+        display: flex;
+        justify-content: center;
+        
+        .social-grid {
+            display: flex; /* Single horizontal row */
+            flex-direction: row;
+            gap: 0.75rem;
+            max-width: none; /* Remove width restriction */
+            
+            .social-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    section.location {
+        flex: 1; /* Take equal space */
+        text-align: right;
+        
+        h3 {
+            font-size: 1.3rem; /* Larger text on desktop */
+            text-align: right;
+        }
+        
+        address {
+            font-size: 1rem; /* Larger text on desktop */
+            text-align: right;
+        }
+    }
+    
+    p.legal {
+        margin-top: 3rem; /* More spacing on desktop */
+    }
+}

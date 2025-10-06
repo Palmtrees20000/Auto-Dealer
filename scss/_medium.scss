@@ -1,0 +1,163 @@
+
+/* Header - Medium Screens */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: $gutter;
+    align-items: center;
+    
+    img {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+    
+    .phone-number {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        margin-top: 0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    #theButton {
+        display: none;
+    }
+}
+
+/* NAVIGATION (medium breakpoint - horizontal nav) */
+#theButton {
+    display: none;
+}
+
+#theNav {
+    grid-template-rows: 1fr;
+    background-color: $primaryColor;
+}
+
+#theNav ul, #theNav ul.open {
+    display: flex;
+    justify-content: flex-end;
+    
+    li a {
+        padding: .75rem 1.5rem;
+        border: none;
+        font-weight: 600;
+        color: black;
+    }
+    
+    li.active a {
+        font-weight: 600;
+        color: black;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+#mainWrapper {
+    border-bottom: 1px solid $greyColor;
+}
+
+/* Service Cards - Medium Screens */
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Reviews - Medium Screens */
+.reviews-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+div.allcards {
+    grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns on medium screens */
+    gap: 2rem; /* 2rem gap between cards */
+    max-width: 900px; /* Slightly wider for better tablet layout */
+    margin: 0 auto 3rem auto; /* Center horizontally and add bottom margin */
+    padding: 0 2rem; /* Add side padding on medium screens */
+    justify-items: center; /* Center items within their grid cells */
+    
+    section {
+        width: 100%; /* Cards take full width of their grid cell */
+        max-width: 400px; /* Constrain card width for better proportions */
+        
+        img {
+            height: 200px; /* Consistent height across breakpoints */
+        }
+    }
+    
+    /* When there's an odd number of cards, the last card will automatically 
+       center itself in the grid due to justify-items: center */
+}
+
+/* Maintain 10px left padding on medium screens */
+#mainWrapper > p {
+    padding-left: 10px;
+}
+
+
+
+footer {
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; /* Align all columns at the top */
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    section.contact {
+        flex: 1; /* Take equal space */
+        text-align: left; /* Left-aligned contact info */
+        
+        .contact-item {
+            justify-content: flex-start; /* Left align contact items */
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    section.social {
+        flex: 1; /* Take equal space */
+        display: flex;
+        justify-content: center;
+        
+        .social-grid {
+            display: grid; /* 2×3 grid layout */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(2, 1fr); /* 2 rows */
+            gap: 0.5rem;
+            max-width: 150px; /* Constrain grid size */
+            
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.3rem;
+            }
+            
+            /* Remove special positioning - let icons flow naturally into grid */
+        }
+    }
+    
+    section.location {
+        flex: 1; /* Take equal space */
+        text-align: right; /* Right align address */
+        
+        h3 {
+            text-align: right;
+        }
+        
+        address {
+            text-align: right;
+            font-style: italic; /* Italic text for address */
+        }
+    }
+}

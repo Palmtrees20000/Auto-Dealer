@@ -1,0 +1,54 @@
+{
+  "reviews": [
+    {
+      "customerName": "Emily Johnson",
+      "rating": 5,
+      "comment": "Absolutely loved the service! Everything was smooth and professional."
+    },
+    {
+      "customerName": "Michael Thompson",
+      "rating": 4,
+      "comment": "Great experience overall. A few minor issues, but they were resolved quickly."
+    },
+    {
+      "customerName": "Sophia Martinez",
+      "rating": 3,
+      "comment": "The product was decent, but the shipping took longer than expected."
+    },
+    {
+      "customerName": "Daniel Lee",
+      "rating": 2,
+      "comment": "Not very satisfied. The quality wasn't what I was hoping for."
+    },
+    {
+      "customerName": "Olivia Brown",
+      "rating": 5,
+      "comment": "Excellent quality! I'll definitely be purchasing again."
+    },
+    {
+      "customerName": "James Wilson",
+      "rating": 4,
+      "comment": "Good overall, but packaging could have been better."
+    },
+    {
+      "customerName": "Ava Taylor",
+      "rating": 1,
+      "comment": "Very disappointed. The product arrived damaged and customer support was unhelpful."
+    },
+    {
+      "customerName": "Ethan Davis",
+      "rating": 5,
+      "comment": "Fantastic! Exactly what I needed and even better than expected."
+    },
+    {
+      "customerName": "Isabella Garcia",
+      "rating": 3,
+      "comment": "Mediocre experience. Not terrible, but I've had better for the price."
+    },
+    {
+      "customerName": "William Anderson",
+      "rating": 0,
+      "comment": "Worst purchase I've ever made. Would not recommend to anyone."
+    }
+  ]
+}

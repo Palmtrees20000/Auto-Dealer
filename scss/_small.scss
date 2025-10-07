@@ -129,6 +129,7 @@ header {
         &:hover {
             text-decoration: underline;
             color: white;
+            background-color: $secondaryColor;
         }
     }
     li.active a {

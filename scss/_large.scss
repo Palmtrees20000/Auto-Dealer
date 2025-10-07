@@ -59,6 +59,11 @@ header {
         color: black;
     }
     
+     a:hover {
+        text-decoration: underline;
+        background-color: $secondaryColor;
+
+    }
     li.active a {
         font-weight: 600;
         color: $darkTeal;

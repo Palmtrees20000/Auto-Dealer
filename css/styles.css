@@ -436,6 +436,7 @@ header .company-name {
 #theNav ul li a:hover {
   text-decoration: underline;
   color: white;
+  background-color: #F27405;
 }
 #theNav ul li.active a {
   color: #042A2B;
@@ -1052,6 +1053,7 @@ footer p.legal a:hover {
   }
   #theNav ul a:hover, #theNav ul.open a:hover {
     text-decoration: underline;
+    background-color: #F27405;
   }
   #mainWrapper {
     border-bottom: 1px solid #042A2B;
@@ -1187,6 +1189,10 @@ footer p.legal a:hover {
     font-weight: 600;
     border: none;
     color: black;
+  }
+  #theNav ul a:hover, #theNav ul.open a:hover {
+    text-decoration: underline;
+    background-color: #F27405;
   }
   #theNav ul li.active a, #theNav ul.open li.active a {
     font-weight: 600;

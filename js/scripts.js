@@ -1,3 +1,5 @@
+
+
 // inject current year into the footer
 const dateNow = new Date();
 const yearElement = document.querySelector('#year');

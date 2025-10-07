@@ -520,7 +520,14 @@ h1 {
 }
 .cards section h1 {
   font-size: 1.5rem;
-  color: #F2C12E;
+  color: #042A2B;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  background: none;
+}
+.cards section h3 {
+  font-size: 1.5rem;
+  color: #042A2B;
   margin: 0 0 1rem 0;
   font-weight: 600;
   background: none;
@@ -672,7 +679,7 @@ h1 {
   color: #ddd;
 }
 .review-card .review-header .rating .star.filled {
-  color: #FFD700;
+  color: #042A2B;
 }
 .review-card .review-comment {
   color: #666;

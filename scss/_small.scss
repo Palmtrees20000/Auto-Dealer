@@ -220,7 +220,15 @@ h1 {
         
         h1 {
             font-size: 1.5rem;
-            color: $primaryColor;
+            color: $darkTeal;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
+            background: none;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: $darkTeal;
             margin: 0 0 1rem 0;
             font-weight: 600;
             background: none;
@@ -391,7 +399,7 @@ h1 {
                 color: #ddd;
                 
                 &.filled {
-                    color: #FFD700;
+                    color: $darkTeal;
                 }
             }
         }

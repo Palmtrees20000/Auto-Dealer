@@ -165,7 +165,7 @@ header {
         height: auto;
         display: block;
     }
-        p {
+        h1 {
             position: absolute;
             margin: 0;
             background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 50%, rgba(0, 0, 0, 0) 100%);
@@ -180,7 +180,7 @@ header {
 
 
 // --------------------------- MAIN CONTENT AREA ---------------------------
-h1 {
+h2 {
     margin: 25px 0 1rem 0;
     color: $darkTeal;
 }
@@ -219,6 +219,14 @@ h1 {
         }
         
         h1 {
+            font-size: 1.5rem;
+            color: $darkTeal;
+            margin: 0 0 1rem 0;
+            font-weight: 600;
+            background: none;
+        }
+        
+        h2 {
             font-size: 1.5rem;
             color: $darkTeal;
             margin: 0 0 1rem 0;
@@ -344,7 +352,7 @@ h1 {
     background-color: #f8f9fa;
     margin-top: 2rem;
     
-    h2 {
+    h4 {
         text-align: center;
         font-size: 2.5rem;
         color: $darkTeal;
@@ -396,10 +404,12 @@ h1 {
             
             .star {
                 font-size: 1.2rem;
-                color: #ddd;
+                color: transparent;
+                -webkit-text-stroke: 1px $darkTeal;
                 
                 &.filled {
                     color: $darkTeal;
+                    -webkit-text-stroke: none;
                 }
             }
         }
@@ -592,7 +602,7 @@ div#parent {
 
 footer {
     font-size: .85rem;
-    padding: 2rem $gutter;
+    padding: 1rem $gutter;
     color: black;
     text-align: center;
     line-height: $leading;
@@ -691,16 +701,15 @@ footer {
     }
     
     p.legal {
-        margin: 2rem 0 0 0;
+        margin: 0;
         font-weight: $lightWeight;
         text-align: center;
         font-size: 0.8rem;
         color: black;
-        border-top: 1px solid #d0d0d0;
-        padding-top: 1.5rem;
+        padding: 0;
         
         a {
-            color: black;
+            color: black !important;
             text-decoration: underline;
             
             &:hover {

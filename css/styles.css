@@ -471,7 +471,7 @@ header .company-name {
   height: auto;
   display: block;
 }
-.parentHero p {
+.parentHero h1 {
   position: absolute;
   margin: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0) 100%);
@@ -483,7 +483,7 @@ header .company-name {
   font-size: 2rem;
 }
 
-h1 {
+h2 {
   margin: 25px 0 1rem 0;
   color: #042A2B;
 }
@@ -519,6 +519,13 @@ h1 {
   transform: scale(1.1);
 }
 .cards section h1 {
+  font-size: 1.5rem;
+  color: #042A2B;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  background: none;
+}
+.cards section h2 {
   font-size: 1.5rem;
   color: #042A2B;
   margin: 0 0 1rem 0;
@@ -627,7 +634,7 @@ h1 {
   background-color: #f8f9fa;
   margin-top: 2rem;
 }
-.reviews-section h2 {
+.reviews-section h4 {
   text-align: center;
   font-size: 2.5rem;
   color: #042A2B;
@@ -676,10 +683,12 @@ h1 {
 }
 .review-card .review-header .rating .star {
   font-size: 1.2rem;
-  color: #ddd;
+  color: transparent;
+  -webkit-text-stroke: 1px #042A2B;
 }
 .review-card .review-header .rating .star.filled {
   color: #042A2B;
+  -webkit-text-stroke: none;
 }
 .review-card .review-comment {
   color: #666;
@@ -889,7 +898,7 @@ div#parent {
 
 footer {
   font-size: 0.85rem;
-  padding: 2rem 10px;
+  padding: 1rem 10px;
   color: black;
   text-align: center;
   line-height: 150%;
@@ -969,16 +978,15 @@ footer section.location address {
   color: black;
 }
 footer p.legal {
-  margin: 2rem 0 0 0;
+  margin: 0;
   font-weight: 300;
   text-align: center;
   font-size: 0.8rem;
   color: black;
-  border-top: 1px solid #d0d0d0;
-  padding-top: 1.5rem;
+  padding: 0;
 }
 footer p.legal a {
-  color: black;
+  color: black !important;
   text-decoration: underline;
 }
 footer p.legal a:hover {
@@ -1224,13 +1232,13 @@ footer p.legal a:hover {
   footer {
     max-width: 1200px;
     margin: auto;
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
   }
   footer .footer-content {
     display: flex;
     flex-direction: row;
     align-items: center; /* Vertically center all three columns */
-    gap: 4rem;
+    gap: 2rem;
     text-align: left;
   }
   footer section.contact {
@@ -1275,6 +1283,6 @@ footer p.legal a:hover {
     text-align: right;
   }
   footer p.legal {
-    margin-top: 3rem; /* More spacing on desktop */
+    margin-top: 1rem; /* Reduced spacing on desktop */
   }
 }/*# sourceMappingURL=styles.css.map */

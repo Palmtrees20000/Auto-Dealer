@@ -119,13 +119,14 @@ main {
 footer {
     max-width: 1200px;
     margin: auto;
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
+    
     
     .footer-content {
         display: flex;
         flex-direction: row;
         align-items: center; /* Vertically center all three columns */
-        gap: 4rem;
+        gap: 2rem;
         text-align: left;
     }
     
@@ -181,6 +182,6 @@ footer {
     }
     
     p.legal {
-        margin-top: 3rem; /* More spacing on desktop */
+        margin-top: 1rem; /* Reduced spacing on desktop */
     }
 }

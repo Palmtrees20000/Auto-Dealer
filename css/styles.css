@@ -438,7 +438,8 @@ header .company-name {
   color: white;
 }
 #theNav ul li.active a {
-  color: #F27405;
+  color: #042A2B;
+  font-weight: 600;
 }
 #theNav ul li.active a:hover {
   text-decoration: underline;
@@ -1043,7 +1044,7 @@ footer p.legal a:hover {
   }
   #theNav ul li.active a, #theNav ul.open li.active a {
     font-weight: 600;
-    color: black;
+    color: #042A2B;
   }
   #theNav ul a:hover, #theNav ul.open a:hover {
     text-decoration: underline;
@@ -1185,7 +1186,7 @@ footer p.legal a:hover {
   }
   #theNav ul li.active a, #theNav ul.open li.active a {
     font-weight: 600;
-    color: black;
+    color: #042A2B;
   }
   /* Service Cards - Large Screens */
   .cards {

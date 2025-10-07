@@ -132,7 +132,8 @@ header {
         }
     }
     li.active a {
-        color: $secondaryColor;
+        color: $darkTeal;
+        font-weight: 600;
         
         &:hover {
             text-decoration: underline;

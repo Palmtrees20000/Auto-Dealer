@@ -373,7 +373,7 @@ header #theButton {
   background: none;
   font-size: 2rem;
   cursor: pointer;
-  padding: none;
+  padding: 0;
   width: 44px;
   height: 44px;
 }
@@ -683,12 +683,10 @@ h2 {
 }
 .review-card .review-header .rating .star {
   font-size: 1.2rem;
-  color: #e0e0e0;
-  -webkit-text-stroke: 1px #042A2B;
+  color: #666666;
 }
 .review-card .review-header .rating .star.filled {
-  color: #042A2B;
-  -webkit-text-stroke: none;
+  color: #8A4F7D;
 }
 .review-card .review-comment {
   color: #666;

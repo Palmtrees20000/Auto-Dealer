@@ -683,7 +683,7 @@ h2 {
 }
 .review-card .review-header .rating .star {
   font-size: 1.2rem;
-  color: transparent;
+  color: #e0e0e0;
   -webkit-text-stroke: 1px #042A2B;
 }
 .review-card .review-header .rating .star.filled {
